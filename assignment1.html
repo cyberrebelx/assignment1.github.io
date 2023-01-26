@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+      body{
+        background-color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      th, td {
+     padding:0px 10px 0px;
+      background-color: aqua;
+     }
+    table, th, td {
+      border: 1px solid black;
+      
+    }
+    #table {
+       display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .content{
+      margin: auto;
+      width: 90vw;
+    }
+    #button{
+      font-weight: bold;
+      background-color: lime;
+      height: 32px;
+      border-radius: 10px;
+    }
+    #footer {
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: rgb(21, 21, 207);
+    }
+    b{
+     color:gold;
+    }
+    
+    </style> 
+</head>
+
+<body>
+<div class="content">
+  
+    <h2 class="font-bold">Multiplication Table Generator</h2>
+    <p>Generate a multiplication table with;</p>
+         <label><b>No. of Rows:</b><input type="number" id="norows" min="1" value="10"></label> 
+        <label class="font"><b>No of Columns: </b><input type="number" id="nocols" min="1" value="10"></label>
+        <p> <input type="submit" id="button" onclick="createTable()" value="Generate"> </p>
+  
+    <table id="table"></table>
+  </div>
+  <footer>
+    <div id="footer">
+     <p>&copy; 2023 Mhd Creatives</p>
+  </footer>
+  <script src="assignment1.js" defer></script>
+</body>
+</html>
